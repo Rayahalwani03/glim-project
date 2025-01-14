@@ -2,10 +2,13 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+      lightGray: '#F2F4F8', // Add your color with a custom name
+    },},
   },
   plugins: [],
 }
