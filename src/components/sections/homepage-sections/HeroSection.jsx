@@ -3,7 +3,7 @@ function HeroSection() {
   return (
     <>
       <div>
-        <section className="bg-red-500 py-20 text-left px-12 py-9 flex items-center justify-between">
+        <section className="bg-gray-800 py-20 text-left px-12 py-9 flex items-center justify-between">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center min-h-[200px]">
             {/* Left Side */}
             <div className="text-left px-6  ">

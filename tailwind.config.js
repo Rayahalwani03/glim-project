@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-      lightGray: '#F2F4F8', // Add your color with a custom name
-    },},
+      lightGray: '#F2F4F8',
+      customPink: '#FAF2F3', // Add your color with a custom name
+    },
+    fontFamily: {
+      inter: ['Inter', 'sans-serif'],
+    },
+  },
   },
   plugins: [],
 }

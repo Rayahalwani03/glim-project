@@ -8,6 +8,7 @@ import Map from "./pages/Map";
 import Post from "./pages/Post";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Cards from './pages/Cards';
 
 const App = () => {
   return (
@@ -21,8 +22,10 @@ const App = () => {
           <Route path="/map" element={<Map />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/donation" element={<Donations />} />
+          <Route path="/cards" element={<Cards />} />
+         
         </Route>
-
+   
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>

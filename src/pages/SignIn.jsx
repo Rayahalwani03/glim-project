@@ -1,6 +1,8 @@
 function SignIn() {
   return (
     <div className="flex min-h-screen ">
+
+      
       {/* Left Section */}
       <div className="flex flex-col justify-center w-full max-w-md mx-auto px-8 py-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Back!</h1>

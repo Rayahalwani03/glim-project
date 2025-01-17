@@ -13,8 +13,10 @@ function Home() {
         <LatestPostsSection />
 
         <MostReadPostsSection />
+        <HomePageBecomePublisherSection />
       </div>
-      <HomePageBecomePublisherSection />
+      
+     
 
       <div className="mr-32 ml-36 mt-12 mb-12">
         <HomePageDontaionsSection />

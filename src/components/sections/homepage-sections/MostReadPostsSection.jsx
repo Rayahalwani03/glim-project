@@ -1,5 +1,5 @@
 
-
+import MostReadCard from "../../cards/MostReadCard";
 function MostReadPostsSection() {
 
   const posts = [
@@ -10,19 +10,12 @@ function MostReadPostsSection() {
   
 
   return (
-    <div>
+    <div className="mt-6">
+      <h1  className="text-4xl font-bold">Most Read Posts</h1>
       <section className="  mt-12 mb-12 ">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8">Most Read Posts</h2>
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
-          {posts.map((post, index) => (
-            <div key={index} className="bg-gray-100 p-6 rounded shadow">
-              <h3 className="text-xl font-bold mb-2">{post.title}</h3>
-              <p className="text-gray-600">Category: {post.category}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <MostReadCard />
+      <MostReadCard />
+      <MostReadCard />
     </section>
       
     </div>

@@ -1,13 +1,11 @@
 const ApplyButton = () => {
   return (
-    <div>
-      <button
+    
+    <button
         id="Apply-btn"
-        className=" bg-white text-black font-bold rounded-full px-6 py-3 mr-20"
-      >
+        className=" bg-white text-black font-bold rounded-full px-9 py-3">
         Apply
       </button>
-    </div>
   );
 };
 
