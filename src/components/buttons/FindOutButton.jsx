@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom';
-
+import Button from "./Button";
 const FindOutButton = () => {
+
   return (
-<div>
-  <button className="mt-6 px-6 py-3 bg-white text-black font-bold" type="button">
-    <Link to="/map">Find Out How</Link>
-  </button>
-</div>
+    <>
+      <Button
+        label="Find Out Now"
+        className="mt-6 px-6 py-3 bg-white text-black font-bold"
+        linkTo="/map"
+        
+      />
+    </>
   );
 };
 

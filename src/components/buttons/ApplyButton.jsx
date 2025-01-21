@@ -1,11 +1,14 @@
+import Button from "./Button";
 const ApplyButton = () => {
   return (
-    
-    <button
-        id="Apply-btn"
-        className=" bg-white text-black font-bold rounded-full px-9 py-3">
-        Apply
-      </button>
+    <>
+      <Button
+        id="apply-btn"
+        linkTo="/"
+        label="Apply"
+        className="bg-white text-black font-bold rounded-full px-9 py-3"
+      ></Button>
+    </>
   );
 };
 

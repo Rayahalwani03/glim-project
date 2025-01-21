@@ -4,14 +4,16 @@ src
 │   └── react.svg
 ├── components
 │   ├── AdminLayout.jsx
+│   ├── Forms
+│   │   ├── ApplyForm.jsx
+│   │   ├── LocationForm.jsx
+│   │   ├── PostForm.jsx
+│   │   └── SubscribeForm.jsx
 │   ├── Layout.jsx
 │   ├── buttons
-│   │   ├── AddLocationButton.jsx
 │   │   ├── ApplyButton.jsx
 │   │   ├── DonateButton.jsx
-│   │   ├── FindOutButton.jsx
-│   │   ├── SearchNavBarButton.jsx
-│   │   └── SubscribeButton.jsx
+│   │   └── FindOutButton.jsx
 │   ├── cards
 │   │   ├── BecomePublisher.jsx
 │   │   ├── BecomePublisherCardAu.jsx
@@ -21,16 +23,13 @@ src
 │   │   ├── FQACard.jsx
 │   │   ├── MostReadCard.jsx
 │   │   ├── PostCard.jsx
-│   │   ├── SubscribeCard.jsx
 │   │   └── TestCard.jsx
 │   ├── general-components
 │   │   ├── Footer.jsx
 │   │   ├── NavBar.jsx
 │   │   ├── PortalNavBar.jsx
+│   │   ├── ScrollToTop.jsx
 │   │   └── SideBar.jsx
-│   ├── modals
-│   │   ├── LocationForm.jsx
-│   │   └── PostForm.jsx
 │   └── sections
 │       ├── about-us-sections
 │       │   ├── AboutUsSection.jsx
@@ -58,13 +57,12 @@ src
 │       ├── map-sections
 │       │   ├── AddLocationSection.jsx
 │       │   └── MapHeaderSection.jsx
-│       ├── post-sections
-│       │   ├── CommentsSection.jsx
-│       │   ├── PostContentSection.jsx
-│       │   ├── PostDetailsSection.jsx
-│       │   ├── PostTitle.jsx
-│       │   └── SubscribeSection.jsx
-│       └── side-bar
+│       └── post-sections
+│           ├── CommentsSection.jsx
+│           ├── PostContentSection.jsx
+│           ├── PostDetailsSection.jsx
+│           ├── PostTitle.jsx
+│           └── SubscribeSection.jsx
 ├── index.css
 ├── main.jsx
 ├── pages
@@ -75,6 +73,7 @@ src
 │   ├── Donations.jsx
 │   ├── Home.jsx
 │   ├── Map.jsx
+│   ├── NotFound.jsx
 │   ├── Post.jsx
 │   ├── SignIn.jsx
 │   ├── SignUp.jsx
@@ -84,4 +83,4 @@ src
 │       └── AdminMembers.jsx
 └── server.js
 
-19 directories, 66 files
+18 directories, 66 files

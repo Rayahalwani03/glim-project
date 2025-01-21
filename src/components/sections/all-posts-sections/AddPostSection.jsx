@@ -1,6 +1,5 @@
 import { useState } from "react";
-import PostForm from "../../modals/PostForm";
-
+import PostForm from "../../Forms/PostForm";
 
 const AddPostSection = () => {
   const [isFormOpen, setFormOpen] = useState(false); // State to manage the modal
@@ -17,8 +16,6 @@ const AddPostSection = () => {
 
   return (
     <section>
-      
-      
       {isFormOpen && <PostForm closePostForm={closePostForm} />}
 
       <div>

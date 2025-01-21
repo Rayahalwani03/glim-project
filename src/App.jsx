@@ -15,28 +15,36 @@ import Post from "./pages/Post";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 
+import ScrollToTop from "./components/general-components/ScrollToTop";
+import NotFound from "./pages/NotFound";
+
 const App = () => {
   return (
     <Router>
+      <ScrollToTop /> {/* Scroll to top on route change */}
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/post" element={<Post />} />
-          <Route path="/map" element={<Map />} />
-          <Route path="/allposts" element={<AllPosts />} />
-          <Route path="/map" element={<Map />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/donation" element={<Donations />} />
-          <Route path="/cards" element={<Cards />} />
-          <Route path="/donationcase" element={<DonationCase />} />
+        {/* Public Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} /> {/* Default route ("/") */}
+          <Route path="post" element={<Post />} /> {/* Dynamic post route */}
+          <Route path="map" element={<Map />} />
+          <Route path="category" element={<AllPosts />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="donation" element={<Donations />} />
+          <Route path="cards" element={<Cards />} />
+          <Route path="donationcase" element={<DonationCase />} />
         </Route>
 
-        <Route element={<AdminLayout />}>
-          <Route path="/admin-portal" element={<AdminHome />} />
+        <Route path="/admin-portal" element={<AdminLayout />}>
+          <Route index element={<AdminHome />} />
         </Route>
 
+        {/* Catch-all route */}
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+
+        {/* Catch-all route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

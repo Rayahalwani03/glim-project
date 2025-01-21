@@ -8,7 +8,7 @@ const NavBar = () => {
         {/* Logo Section */}
         <div>
           <h1 className="font-serif font-black text-2xl">
-            <Link to="/home">Glim.</Link> {/* Replaced <a> with <Link> */}
+            <Link to="/">Glim.</Link> {/* Replaced <a> with <Link> */}
           </h1>
         </div>
 
@@ -17,10 +17,10 @@ const NavBar = () => {
           <div className="font-semibold"></div>
           <ul className="font-inter text-gray-900 flex space-x-20">
             <li>
-              <Link to="/home">Home</Link> {/* Replaced <a> with <Link> */}
+              <Link to="/">Home</Link> {/* Replaced <a> with <Link> */}
             </li>
             <li>
-              <Link to="/allposts">Category</Link>{" "}
+              <Link to="/category">Category</Link>{" "}
               {/* Replaced <a> with <Link> */}
             </li>
             <li>

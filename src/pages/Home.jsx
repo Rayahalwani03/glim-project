@@ -2,10 +2,12 @@
 import HomePageDonationsSection from "../components/sections/homepage-sections/DontaionsSection";
 import FAQSection from "../components/sections/homepage-sections/FAQSection";
 import HeroSection from "../components/sections/homepage-sections/HeroSection";
+import HpBecomePublisherSection from "../components/sections/homepage-sections/HpBecomePublisherSection";
 
 
 import LatestPostsSection from "../components/sections/homepage-sections/LatestPostsSection";
 import MostReadPostsSection from "../components/sections/homepage-sections/MostReadPostsSection";
+
 
 function Home() {
   return (
@@ -24,7 +26,7 @@ function Home() {
             <MostReadPostsSection />
           </div>
 
-       
+       <HpBecomePublisherSection/>
 
           <HomePageDonationsSection/>
          <FAQSection/>

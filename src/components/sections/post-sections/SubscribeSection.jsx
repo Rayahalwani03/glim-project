@@ -1,11 +1,14 @@
-import SubscribeCard from "../../cards/SubscribeCard";
+
+import SubscribeForm from '../../Forms/SubscribeForm'
 
 const SubscribeSection = () => {
-  return <div>
+  return (
+    <div>
 
+   <SubscribeForm/>
+      
+    </div>
+  )
+}
 
-    <SubscribeCard/>
-  </div>;
-};
-
-export default SubscribeSection;
+export default SubscribeSection

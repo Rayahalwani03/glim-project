@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LocationForm from "../../modals/LocationForm";
+import LocationForm from "../../Forms/LocationForm";
 
 const AddLocationSection = () => {
   // State to manage the modal
