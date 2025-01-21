@@ -23,6 +23,9 @@ const Header = () => {
             </li> */}
 
             <li className="">
+              <a href="/home">Home</a>
+            </li>
+            <li className="">
               <a href="/allposts">Category</a>
             </li>
             <li>

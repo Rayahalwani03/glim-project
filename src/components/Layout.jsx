@@ -4,14 +4,15 @@ import Header from "./general-components/NavBar";
 
 const Layout = () => {
   return (
-    <div>
-      {/* You can place your header or navbar here if needed */}
-      <Header />
-      <main>
-        <Outlet /> {/* This will render the page content */}
-      </main>
-      <Footer /> {/* Footer will be displayed on all pages */}
-    </div>
+    <>
+      <div className="flex flex-col min-h-screen">
+        <Header /> {/* Navbar or Header */}
+        <main className="flex-grow pb-20 ">
+          <Outlet /> {/* This will render the page content */}
+        </main>
+        <Footer /> {/* Footer will always be at the bottom */}
+      </div>
+    </>
   );
 };
 

@@ -26,14 +26,14 @@ function FAQSection() {
   ];
   return (
     <div>
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">
+      <section className="py-10">
+        <div className="container mx-auto px-4 ">
+          <h2 className="text-3xl font-bold mb-8 text-center">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b pb-4">
+              <div key={index} className="border-b pb-4 bg-indigo-50 p-5">
                 <h3 className="text-xl font-bold">{faq.question}</h3>
                 <p className="text-gray-600 mt-2">{faq.answer}</p>
               </div>

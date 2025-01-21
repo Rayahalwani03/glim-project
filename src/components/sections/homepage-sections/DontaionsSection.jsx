@@ -1,27 +1,87 @@
-const HomePageDontaionsSection = () => {
 
-  const donations = [
-    { title: 'University Fees for Kofi', description: 'Support Kofi in becoming the first in his family to attend university.' },
-    { title: 'Safe Shelter for Women', description: 'Help provide a safe haven for women in crisis.' },
-    { title: 'Research Fund for Women\'s Health', description: 'Support vital research into women\'s health issues.' }
+import DonateButton from "../../buttons/DonateButton";
+import DonationsCardSmall from "../../cards/DonationsCardSmall";
+import DontaionsCard from "../../cards/DontaionsCard";
+
+
+const HomePageDonationsSection = () => {
+  const donationItems = [
+    {
+      titleD: "Safe Shelter for Asma’s Family1",
+      descriptionD:
+        "Your support can provide a safe and secure shelter for Asma and her family.",
+      imgUrlD: "/Images/littlegirl.png",
+      urlD: "9308420",
+    },
+    {
+      titleD: "University Fees for Kofi2",
+      descriptionD:
+        "Aid Kofi by covering his tuition fees for a brighter future.",
+      imgUrlD: "/Images/smilestuff.png",
+      urlD: "9308420",
+    },
+    {
+      titleD: "University Fees for Kofi3",
+      descriptionD:
+        "Aid Kofi by covering his tuition fees for a brighter future.",
+      imgUrlD: "/Images/smilestuff.png",
+      urlD: "9308420",
+    },
+    {
+      titleD: "University Fees for Kofi4",
+      descriptionD:
+        "Aid Kofi by covering his tuition fees for a brighter future.",
+      imgUrlD: "/Images/smilestuff.png",
+      urlD: "9308420",
+    },
+    {
+      titleD: "University Fees for Kofi5",
+      descriptionD:
+        "Aid Kofi by covering his tuition fees for a brighter future.",
+      imgUrlD: "/Images/smilestuff.png",
+      urlD: "9308420",
+    },
   ];
+
   return (
-    <div >
-      <section className="py-16 bg-white-100">
-      <div className="container mx-auto px-4">
+    <section className="py-10 ">
+      <div className="container px-4">
         <h2 className="text-3xl font-bold mb-8">Donations</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {donations.map((donation, index) => (
-            <div key={index} className="bg-white p-6 rounded shadow">
-              <h3 className="text-xl font-bold mb-2">{donation.title}</h3>
-              <p className="text-gray-600">{donation.description}</p>
-            </div>
-          ))}
+
+        {/* Left pic */}
+        <div className="flex gap-3">
+          <div>
+            <DontaionsCard
+              titleD={donationItems[0].titleD}
+              descriptionD={donationItems[0].descriptionD}
+              imgUrlD={donationItems[0].imgUrlD}
+              urlD={donationItems[0].urlD}
+            />
+           
+          </div>
+
+          {/* Right pics */}
+          <div className="grid grid-cols-2 grid-rows-2 gap-3 h-96">
+            {donationItems.slice(1, 5).map((item, index) => (
+              <DonationsCardSmall
+                key={index}
+                titleD={item.titleD}
+                descriptionD={item.descriptionD}
+                imgUrlD={item.imgUrlD}
+                urlD={item.urlD}
+              />
+
+
+            ))}
+          </div>
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <DonateButton/>
         </div>
       </div>
     </section>
-    </div>
-  )
-}
+  );
+};
 
-export default HomePageDontaionsSection
+export default HomePageDonationsSection;

@@ -2,7 +2,7 @@ const AboutUsSection = () => {
   return (
     <div>
       <div className=" left-0 w-full p-8 ">
-        <h2 className="text-red-600 text-4xl font-bold tracking-wide border-l-4 border-red-600 pl-4">
+        <h2 className="text-indigo-500 text-4xl font-bold tracking-wide border-l-4 border-indigo-600 pl-4">
           ABOUT US
         </h2>
       </div>

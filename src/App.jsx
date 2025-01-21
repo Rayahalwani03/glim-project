@@ -1,31 +1,42 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
+
+
+import AdminLayout from "./components/AdminLayout";
 import Layout from "./components/Layout";
+
 import AboutUs from "./pages/AboutUs";
-import AllPosts from "./pages/AllPosts";
+import Cards from "./pages/Cards";
+import DonationCase from "./pages/DonationCase";
 import Donations from "./pages/Donations";
-import Home from "./pages/Home";
 import Map from "./pages/Map";
 import Post from "./pages/Post";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import Cards from './pages/Cards';
+import AdminHome from "./pages/admin-portal/AdminHome";
+import Home from "./pages/Home";
+import AllPosts from "./pages/AllPosts";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/post" element={<Post />} />
           <Route path="/map" element={<Map />} />
-          <Route path="/allposts" element={<AllPosts />} />
+          <Route path="/allposts" element={<AllPosts/>} />
           <Route path="/map" element={<Map />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/donation" element={<Donations />} />
           <Route path="/cards" element={<Cards />} />
-         
+          <Route path="/donationcase" element={<DonationCase />} />
         </Route>
-   
+
+        <Route element={<AdminLayout />}>
+          <Route path="/admin-portal" element={<AdminHome />} />
+        </Route>
+
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>
