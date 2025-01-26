@@ -7,6 +7,7 @@ const ApplyButton = () => {
         linkTo="/"
         label="Apply"
         className="bg-white text-black font-bold rounded-full px-9 py-3"
+        type="button"
       ></Button>
     </>
   );

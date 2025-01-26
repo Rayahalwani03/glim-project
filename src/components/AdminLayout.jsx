@@ -14,7 +14,7 @@ const AdminLayout = () => {
         <Outlet /> {/* This will render the page content */}
       </main>
     </div>
-    <Footer className="mt-auto"/> {/* Footer will always be at the bottom */}
+    <Footer className="mt-auto "/> {/* Footer will always be at the bottom */}
   </div>
 
   )

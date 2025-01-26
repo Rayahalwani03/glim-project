@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Input from "../../inputs/Input";
 
 const Case = () => {
   const [clicked, setClicked] = useState(false);
@@ -51,6 +52,7 @@ const Case = () => {
                 <input type="radio" id="option3" name="option" value="3" />
                 <label htmlFor="option3"> $</label>
               </div>
+
             </div>
 
             {/* Amount */}
@@ -83,6 +85,8 @@ const Case = () => {
             <button className="bg-green-500 px-5 py-2 rounded">
               Go to Check
             </button>
+
+     
           </div>
         </div>
       </div>

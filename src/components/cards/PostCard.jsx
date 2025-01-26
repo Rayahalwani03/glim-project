@@ -21,14 +21,14 @@ const PostCard = () => {
       category: "Health",
       title: "The Role of Mental Wellness in Women's Health",
       description:
-        "Breaking down the stigistic well-being.Breakieing.Breaking down the stigma and embracing holistic well-being.Breaking down the stigma and embracing holistic well-being.",
+        "Lorem ipsum  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
       image: "https://via.placeholder.com/400x300", // Replace with your image URL
     },
     {
       id: 4,
       category: "Health",
       title: "Nutrition Insights for a Healthier Lifestyle",
-      description: "Discover how nutrition plays a pivotal role in wellness.",
+      description: "Discover cys a pivotaer cys a pivotal rer cys a pivotal rer cys a pivotal rer cys a pivotal rer cys a pivotal rer cys a pivotal rl role in wellness.",
       image: "https://via.placeholder.com/400x300", // Replace with your image URL
     },
     {
@@ -48,13 +48,22 @@ const PostCard = () => {
     },
   ];
 
-  const getFirstWords = (description, numberOfWords) => {
-    const words = description.split(" ");
-    return (
-      words.slice(0, numberOfWords).join(" ") +
-      (words.length > numberOfWords ? "..." : "")
-    );
+  // const getFirstWords = (description, numberOfWords) => {
+  //   const words = description.split(" ");
+  //   return (
+  //     words.slice(0, numberOfWords).join(" ") +
+  //     (words.length > numberOfWords ? "..." : "")
+  //   );
+  // };
+
+  const getFirstLetters = (description, numberOfLetters) => {
+    if (description.length <= numberOfLetters) {
+      return description;
+    }
+    return description.slice(0, numberOfLetters) + "...";
   };
+
+  
 
   return (
     <>
@@ -74,7 +83,7 @@ const PostCard = () => {
             className="w-full h-40 object-cover rounded-t-lg"
           />
 
-          <div className="p-4">
+          <div className="p-4 max-w-30">
             <h1 className="text-indigo-600 mt-2 mb-2 uppercase text-xs font-semibold">
               music
             </h1>
@@ -82,20 +91,22 @@ const PostCard = () => {
               Breaking Records and Stereotypes in Music
             </h4>
 
-            <div >
-
-            <p className="text-gray-600 text-sm sm:text-base break-words overflow-hidden">
-              {getFirstWords(cards[2].description, 10)}
-            </p>
+            <div>
+              <p className="text-gray-600 text-sm sm:text-base max-h-20  h-18 w-72  break-words overflow-hidden">
+                {getFirstLetters(cards[3].description, 85)}
+              </p>
             </div>
 
-            <a
-              href="/post"
-              className="text-indigo-600 text-xs mt-2 mb-2 inline-block"
-            >
-              Read More <span aria-hidden="true">&rarr;</span>
-            </a>
+
           </div>
+       
+              <a
+                href="/post"
+                className="text-indigo-600 text-xs  bottom-3 left-4 absolute inline-block "
+              >
+                Read More <span aria-hidden="true">&rarr;</span>
+              </a>
+           
         </div>
       </a>
     </>

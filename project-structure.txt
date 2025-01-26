@@ -12,6 +12,7 @@ src
 │   ├── Layout.jsx
 │   ├── buttons
 │   │   ├── ApplyButton.jsx
+│   │   ├── Button.jsx
 │   │   ├── DonateButton.jsx
 │   │   └── FindOutButton.jsx
 │   ├── cards
@@ -65,22 +66,21 @@ src
 │           └── SubscribeSection.jsx
 ├── index.css
 ├── main.jsx
-├── pages
-│   ├── AboutUs.jsx
-│   ├── AllPosts.jsx
-│   ├── Cards.jsx
-│   ├── DonationCase.jsx
-│   ├── Donations.jsx
-│   ├── Home.jsx
-│   ├── Map.jsx
-│   ├── NotFound.jsx
-│   ├── Post.jsx
-│   ├── SignIn.jsx
-│   ├── SignUp.jsx
-│   └── admin-portal
-│       ├── AdminCategories.jsx
-│       ├── AdminHome.jsx
-│       └── AdminMembers.jsx
-└── server.js
+└── pages
+    ├── AboutUs.jsx
+    ├── AllPosts.jsx
+    ├── Cards.jsx
+    ├── DonationCase.jsx
+    ├── Donations.jsx
+    ├── Home.jsx
+    ├── Map.jsx
+    ├── NotFound.jsx
+    ├── Post.jsx
+    ├── SignIn.jsx
+    ├── SignUp.jsx
+    └── admin-portal
+        ├── AdminCategories.jsx
+        ├── AdminHome.jsx
+        └── AdminMembers.jsx
 
 18 directories, 66 files
